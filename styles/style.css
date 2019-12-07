@@ -4,13 +4,12 @@
   font-size: 10px;
 }
 
-
 .content-box {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  width: 70%;
+  width: fit-content;
   margin: 0 auto;
   padding: 30px;
   text-align: center;
@@ -31,7 +30,7 @@ h1 {
   color: #fefefe; 
 }
 
-.second-textbox {
+.quote-text {
   width: 50%;
   margin-top: 100px;
   padding: 20px;
@@ -42,8 +41,7 @@ h1 {
   color: #1d8000; 
 }
 
-
-.second-textbox .iconfont {
+.quote-text .iconfont {
   font-size: 30px;
 }
 
@@ -55,30 +53,26 @@ h1 {
   color: #ffffff;
 }
 
-.left-page,
-.middle-page,
-.right-page {
+.page-preview {
   width: 300px;
   height: 200px;
   margin: 20px;
   border: 10px solid #ffffff;
 }
 
-.left-page {
+.empire {
   background-image: url(../images/empire-state.png);
 }
 
-.middle-page {
+.midtown {
   background-image: url(../images/midtown.png);
 }
 
-.right-page {
+.new-york-boy {
   background-image: url(../images/liberty.png);
 }
 
-.left-page:hover .hover-content,
-.middle-page:hover .hover-content,
-.right-page:hover .hover-content {
+.page-preview:hover .hover-content {
   display: block;
 }
 
@@ -91,14 +85,14 @@ h1 {
 }
 
 .hover-content h3 {
-  margin: 0px 20px 0 20px;
+  margin: 0 20px 0 20px;
   padding: 10px;
   font-size: 1.6em;
   text-transform: uppercase;
 }
 
-.right-page .hover-content h3 {
-  border-bottom: solid 1px ;
+.new-york-boy .hover-content h3 {
+  border-bottom: solid 1px;
 }
 
 .hover-content p {
@@ -112,8 +106,7 @@ h1 {
   content: "read more";
   display: block;
   width: 100px;
-  margin: 0 auto;
-  margin-top: 5px;
+  margin: 5px auto 0 auto;
   padding: 5px;
   background-color: #000000;
   color: #ffffff;
@@ -123,11 +116,11 @@ h1 {
   text-transform: uppercase;
 }
 
-.left-page .hover-content {
+.empire .hover-content {
   background-color: rgba(58, 1, 132, 0.44);
 }
 
-.middle-page .hover-content {
+.midtown .hover-content {
   position: relative;
   overflow: hidden;
 } 
@@ -146,16 +139,16 @@ h1 {
   z-index: 1;
 }
 
-.right-page .hover-content {
+.new-york-boy .hover-content {
   background-color: #fff8e8;
   color: #000000;
 }
 
-.third-text-box {
+.dialogue-box {
   margin-top: 100px;
 }
 
-.third-text-box::before {
+.dialogue-box::before {
   content: "";
   display: block;
   position: relative;
@@ -171,8 +164,7 @@ h1 {
   column-count: 3;
   column-gap: 15px;
   width: 50%;
-  margin: 0 auto;
-  margin-bottom: 50px;
+  margin: 0 auto 50px auto;
   padding: 20px;
   border-radius: 5px;
   text-align: left;
